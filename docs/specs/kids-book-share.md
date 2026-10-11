@@ -63,7 +63,7 @@ OUT:
 
 BRANCH: `devin/1791733146-factory-kids-book-share`
 FILE: `docs/specs/kids-book-share.md`
-COMMIT: (see below — filled after commit)
+COMMIT: https://github.com/byteclub-labs/kids-book-share/commit/e3611c9
 
 ## STATUS
 
