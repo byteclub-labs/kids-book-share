@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kids' Book Share</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div id="join-view" class="view" hidden>
+  <h1>Kids' Book Share</h1>
+  <p class="muted">Books shared between parents in <strong id="join-community"></strong>. Enter your details and the community passcode to join.</p>
+  <form id="join-form">
+    <label>Your name
+      <input id="join-name" required autocomplete="name">
+    </label>
+    <label>Flat / unit
+      <input id="join-flat" required placeholder="e.g. B-1204">
+    </label>
+    <label>Phone
+      <input id="join-phone" required type="tel" autocomplete="tel">
+    </label>
+    <label>Community passcode
+      <input id="join-passcode" required type="password">
+    </label>
+    <p id="join-error" class="error" hidden></p>
+    <button type="submit">Join</button>
+  </form>
+</div>
+
+<div id="app-view" class="view" hidden>
+  <header>
+    <h1 id="community-name">Kids' Book Share</h1>
+    <div class="me">
+      <span id="me-label"></span>
+      <button id="sign-out" type="button">Sign out</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="all" type="button">All books</button>
+    <button class="tab" data-tab="mine" type="button">My books</button>
+    <button class="tab" data-tab="requests" type="button">My requests</button>
+  </nav>
+
+  <section id="tab-all" class="tabpane">
+    <details id="post-details">
+      <summary>Post a book</summary>
+      <form id="post-form">
+        <label>Title
+          <input id="post-title" required>
+        </label>
+        <label>Author
+          <input id="post-author" required>
+        </label>
+        <label>Age range
+          <input id="post-age" required placeholder="e.g. 0-3, 4-6, 7-9, 10+">
+        </label>
+        <label>Condition
+          <input id="post-condition" required placeholder="e.g. Like new, Good, Well read">
+        </label>
+        <label>Note (optional)
+          <input id="post-note" placeholder="e.g. lift-the-flap book">
+        </label>
+        <button type="submit">Post book</button>
+      </form>
+    </details>
+    <input id="filter-input" type="search" placeholder="Filter by title or author">
+    <div id="book-list"></div>
+  </section>
+
+  <section id="tab-mine" class="tabpane" hidden>
+    <div id="my-book-list"></div>
+  </section>
+
+  <section id="tab-requests" class="tabpane" hidden>
+    <div id="my-request-list"></div>
+  </section>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
