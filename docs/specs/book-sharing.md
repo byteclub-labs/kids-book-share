@@ -53,9 +53,9 @@ OUT:
 2. Contact details: is showing name + flat/unit enough for parents to coordinate pickup, or should an optional phone/WhatsApp field be collected and shown only to the two parties involved? Default assumption: name + flat/unit only, matching "keep it very simple".
 
 ### SPEC IN GIT
-- `BRANCH: devin/1791733154-factory-book-sharing` (placeholder — filled with the real branch at commit time)
+- `BRANCH: devin/1791733154-factory-book-sharing`
 - `FILE: docs/specs/book-sharing.md`
-- `COMMIT: <filled after push>`
+- `COMMIT: https://github.com/byteclub-labs/kids-book-share/commit/ed5e935a51b5dc1ded9e81e6fe0b08b6279e6b1f`
 
 ### STATUS
 `STATUS: COMPLETE`
