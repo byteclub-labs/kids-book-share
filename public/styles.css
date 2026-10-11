@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #1f2933;
+}
+
+.identity-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #2f6f4f;
+  color: #fff;
+  padding: 12px 16px;
+}
+
+.identity-bar h1 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.identity-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.identity-inputs input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 12px 16px 48px;
+}
+
+.error-banner {
+  background: #fde2e1;
+  border: 1px solid #e8a19e;
+  color: #7a271f;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.add-book {
+  margin-bottom: 12px;
+}
+
+.add-toggle {
+  width: 100%;
+}
+
+.add-form {
+  margin-top: 12px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.add-form h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.add-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #52606d;
+}
+
+input,
+select {
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid #cbd2d9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #d9e2ec;
+}
+
+.tab {
+  flex: 1;
+  min-height: 44px;
+  padding: 8px;
+  border: none;
+  background: none;
+  font-size: 0.95rem;
+  color: #52606d;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tab.active {
+  color: #2f6f4f;
+  font-weight: 600;
+  border-bottom-color: #2f6f4f;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 0;
+}
+
+.filters select {
+  width: 110px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.book-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: #e4e7eb;
+  color: #3e4c59;
+}
+
+.chip.status-available {
+  background: #def7ec;
+  color: #03543f;
+}
+
+.chip.status-requested {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.chip.status-reserved {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.book-meta {
+  font-size: 0.9rem;
+  color: #52606d;
+  margin-bottom: 4px;
+}
+
+.book-notes {
+  font-size: 0.9rem;
+  color: #7b8794;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.requester-info {
+  font-size: 0.9rem;
+  color: #92400e;
+  margin-bottom: 4px;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2f6f4f;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #e4e7eb;
+  color: #1f2933;
+}
+
+.btn-danger {
+  background: #f8e3e1;
+  color: #8f2d27;
+}
+
+.request-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.request-form input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #7b8794;
+  padding: 48px 16px;
+  font-size: 1rem;
+}

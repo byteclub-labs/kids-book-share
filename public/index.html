@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Book Share</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="identity-bar">
+    <h1>Kids Book Share</h1>
+    <div class="identity-inputs">
+      <input id="identity-name" type="text" placeholder="Your name" autocomplete="name">
+      <input id="identity-flat" type="text" placeholder="Flat / unit">
+    </div>
+  </header>
+
+  <main>
+    <div id="error-banner" class="error-banner" hidden></div>
+
+    <section class="add-book">
+      <button id="add-toggle" class="btn btn-primary add-toggle" type="button">+ Add a book</button>
+      <form id="add-form" class="add-form" hidden>
+        <h2>Add a book</h2>
+        <label>Your name
+          <input id="add-owner-name" type="text" required>
+        </label>
+        <label>Flat / unit
+          <input id="add-owner-flat" type="text" required>
+        </label>
+        <label>Book title
+          <input id="add-title" type="text" required>
+        </label>
+        <label>Age group
+          <select id="add-age-group" required>
+            <option value="">Select…</option>
+            <option value="0-3">0-3</option>
+            <option value="4-6">4-6</option>
+            <option value="7-9">7-9</option>
+            <option value="10+">10+</option>
+          </select>
+        </label>
+        <label>Condition
+          <select id="add-condition" required>
+            <option value="">Select…</option>
+            <option value="Like new">Like new</option>
+            <option value="Good">Good</option>
+            <option value="Worn">Worn</option>
+          </select>
+        </label>
+        <label>Notes (optional)
+          <input id="add-notes" type="text">
+        </label>
+        <button type="submit" class="btn btn-primary">Post book</button>
+      </form>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="available" type="button">Available</button>
+      <button class="tab" data-tab="mylistings" type="button">My listings</button>
+      <button class="tab" data-tab="myrequests" type="button">My requests</button>
+    </nav>
+
+    <div id="filters" class="filters">
+      <input id="filter-title" type="search" placeholder="Search by title…">
+      <select id="filter-age">
+        <option value="">All ages</option>
+        <option value="0-3">0-3</option>
+        <option value="4-6">4-6</option>
+        <option value="7-9">7-9</option>
+        <option value="10+">10+</option>
+      </select>
+    </div>
+
+    <div id="book-list"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

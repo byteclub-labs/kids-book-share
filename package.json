@@ -1,0 +1,12 @@
+{
+  "name": "kids-book-share",
+  "version": "1.0.0",
+  "description": "Simple website for parents in our society to share kids books",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
